@@ -4,7 +4,7 @@ Example Project using Spring Boot and Kafka with Docker.
 
 ## Build
 
-To build this project you need Java 11 and Docker installed.
+To build this project you need Java 11 and [Docker](https://www.docker.com/) installed.
 
 ### Step by Step
 
