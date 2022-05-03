@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HolderAccount.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">kafka-example</a> &gt; <a href="index.source.html" class="el_package">com.example.kafkaexample.entities</a> &gt; <span class="el_source">HolderAccount.java</span></div><h1>HolderAccount.java</h1><pre class="source lang-java linenums">package com.example.kafkaexample.entities;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.math.BigDecimal;
+import java.util.UUID;
+
+@Getter
+<span class="pc" id="L13">@Setter</span>
+@Entity
+@Table(name = &quot;holder_account&quot;)
+<span class="fc" id="L16">@NoArgsConstructor</span>
+<span class="nc" id="L17">@AllArgsConstructor</span>
+public class HolderAccount {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  @Column(name = &quot;holder_account_id&quot;)
+<span class="fc" id="L23">  private UUID id;</span>
+
+  @Column(name = &quot;number&quot;)
+<span class="fc" id="L26">  private String accountNumber;</span>
+
+  @Column(name = &quot;agency_number&quot;)
+<span class="fc" id="L29">  private String agencyNumber;</span>
+
+  @Column(name = &quot;balance&quot;)
+<span class="fc" id="L32">  private BigDecimal balance;</span>
+
+  public static class Builder {
+
+    private final String accountNumber;
+    private final String agencyNumber;
+    private final BigDecimal balance;
+
+<span class="fc" id="L40">    public Builder(String accountNumber) {</span>
+<span class="fc" id="L41">      this.agencyNumber = &quot;001&quot;;</span>
+<span class="fc" id="L42">      this.accountNumber = accountNumber;</span>
+<span class="fc" id="L43">      this.balance = BigDecimal.ZERO;</span>
+<span class="fc" id="L44">    }</span>
+
+    public HolderAccount build() {
+<span class="fc" id="L47">      return new HolderAccount(this);</span>
+    }
+  }
+
+<span class="fc" id="L51">  private HolderAccount(Builder builder) {</span>
+<span class="fc" id="L52">    accountNumber = builder.accountNumber;</span>
+<span class="fc" id="L53">    agencyNumber = builder.agencyNumber;</span>
+<span class="fc" id="L54">    balance = builder.balance;</span>
+<span class="fc" id="L55">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

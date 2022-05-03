@@ -1,0 +1,14 @@
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\repositories\HolderRepository.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\producer\HolderAccountProducer.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\config\KafkaProducerConfig.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\consumer\HolderConsumer.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\service\HolderService.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\config\KafkaConsumerConfig.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\consumer\HolderAccountConsumer.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\service\HolderAccountService.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\producer\HolderProducer.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\repositories\HolderAccountRepository.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\entities\HolderAccount.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\KafkaApplication.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\controllers\MessageController.java
+C:\solus\kafka-example\src\main\java\com\example\kafkaexample\entities\Holder.java

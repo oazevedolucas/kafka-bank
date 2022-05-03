@@ -1,0 +1,15 @@
+com\example\kafkaexample\entities\Holder.class
+com\example\kafkaexample\producer\HolderProducer.class
+com\example\kafkaexample\service\HolderService.class
+com\example\kafkaexample\entities\HolderAccount.class
+com\example\kafkaexample\service\HolderAccountService.class
+com\example\kafkaexample\entities\HolderAccount$Builder.class
+com\example\kafkaexample\repositories\HolderRepository.class
+com\example\kafkaexample\config\KafkaConsumerConfig.class
+com\example\kafkaexample\KafkaApplication.class
+com\example\kafkaexample\consumer\HolderConsumer.class
+com\example\kafkaexample\producer\HolderAccountProducer.class
+com\example\kafkaexample\repositories\HolderAccountRepository.class
+com\example\kafkaexample\consumer\HolderAccountConsumer.class
+com\example\kafkaexample\controllers\MessageController.class
+com\example\kafkaexample\config\KafkaProducerConfig.class
